@@ -1,0 +1,17 @@
+#keys{
+    display: table;
+}
+.key{
+    display: table-cell;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+    transition: all .09s ease;
+}
+.row{
+    display: table-row;
+}
+.press{
+    transform: scale(1.1);
+    border-color: blue;
+}
