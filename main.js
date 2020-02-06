@@ -43,8 +43,8 @@ function solve(s){
         }else{
             let cur = s[i];
             while(opSt.length && pri(opSt[opSt.length - 1]) >= pri(s[i])){
-                let f = numSt.pop();
                 let s = numSt.pop();
+                let f = numSt.pop();
                 let res = op(f , s , opSt[opSt.length - 1]);
                 numSt.push(res);
                 opSt.pop();
@@ -53,8 +53,8 @@ function solve(s){
         }
     }
     while(opSt.length){
-        let f = numSt.pop();
         let s = numSt.pop();
+        let f = numSt.pop();
         let res = op(f , s , opSt[opSt.length - 1]);
         numSt.push(res);
         opSt.pop();
