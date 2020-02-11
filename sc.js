@@ -74,5 +74,5 @@ window.addEventListener('keydown' , e=>{
     const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
     console.log(key.innerText);
     keyHandle(key);
-    // console.log(e.keyCode);
+    console.log(e.keyCode);
 });
